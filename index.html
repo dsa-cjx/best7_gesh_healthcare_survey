@@ -1,0 +1,324 @@
+<fieldset>
+  <legend>A. 基本资料 <span class="section-note">（可选）</span></legend>
+  <label>名字（可不填）
+    <input id="name" type="text" placeholder="可不填" />
+  </label>
+  <label>年龄
+    <input id="age" type="number" min="1" max="120" inputmode="numeric" placeholder="例如 20" />
+  </label>
+  <label>居住区
+    <input id="district" type="text" placeholder="例如 沙田" />
+  </label>
+  <label>怎么知道这个活动的
+    <select id="source">
+      <option value="">请选择</option>
+      <option>社区伙伴</option>
+      <option>街站路过</option>
+      <option>朋友/家人</option>
+      <option>社交媒体</option>
+      <option>海报</option>
+      <option>其他</option>
+    </select>
+  </label>
+</fieldset>
+
+<fieldset>
+  <legend>B. 当前状态 <span class="section-note">（核心）</span></legend>
+
+  <h2>（1）今天心情如何？ <span class="req">*</span></h2>
+  <div class="opt-row" data-name="mood_today">
+    <label><input type="radio" name="mood_today" value="心情不好" />心情不好</label>
+    <label><input type="radio" name="mood_today" value="一般" />一般</label>
+    <label><input type="radio" name="mood_today" value="心情好" />心情好</label>
+  </div>
+
+  <h2>（2）近一周的生活满意吗？ <span class="req">*</span></h2>
+  <div class="opt-row" data-name="life_satisfaction">
+    <label><input type="radio" name="life_satisfaction" value="不满意" />不满意</label>
+    <label><input type="radio" name="life_satisfaction" value="一般" />一般</label>
+    <label><input type="radio" name="life_satisfaction" value="很满意" />很满意</label>
+  </div>
+
+  <h2>（3）近一周的压力水平？ <span class="req">*</span></h2>
+  <div class="opt-row" data-name="stress_level">
+    <label><input type="radio" name="stress_level" value="压力小" />压力小</label>
+    <label><input type="radio" name="stress_level" value="一般" />一般</label>
+    <label><input type="radio" name="stress_level" value="压力大" />压力大</label>
+  </div>
+
+  <h2>（4）近一周的睡眠质量 <span class="req">*</span></h2>
+  <div class="opt-row" data-name="sleep_quality">
+    <label><input type="radio" name="sleep_quality" value="质量差" />质量差</label>
+    <label><input type="radio" name="sleep_quality" value="一般" />一般</label>
+    <label><input type="radio" name="sleep_quality" value="质量好" />质量好</label>
+  </div>
+
+  <h2>（5）白天的状态是否受睡眠好坏的影响？ <span class="req">*</span></h2>
+  <div class="opt-row" data-name="sleep_impact">
+    <label><input type="radio" name="sleep_impact" value="不影响" />不影响</label>
+    <label><input type="radio" name="sleep_impact" value="一般" />一般</label>
+    <label><input type="radio" name="sleep_impact" value="影响很大" />影响很大</label>
+  </div>
+
+  <h2>（6）你的主要压力来源是什么？（可多选）</h2>
+  <div class="opt-row" data-name="stress_sources">
+    <label><input type="checkbox" value="经济" />经济</label>
+    <label><input type="checkbox" value="工作" />工作</label>
+    <label><input type="checkbox" value="家庭" />家庭</label>
+    <label><input type="checkbox" value="健康" />健康</label>
+    <label><input type="checkbox" value="睡眠" />睡眠</label>
+    <label><input type="checkbox" value="学业" />学业</label>
+    <label><input type="checkbox" value="人际关系" />人际关系</label>
+    <label><input type="checkbox" value="其他" />其他</label>
+  </div>
+
+  <label>（7）最近一次你觉得开心是什么事情／因为什么？
+    <textarea id="happy_reason" placeholder="可简要描述"></textarea>
+  </label>
+</fieldset>
+
+<fieldset>
+  <legend>C. 即时体验 <span class="section-note">（街站）</span></legend>
+
+  <h2>（1）现在你的放松程度 <span class="req">*</span></h2>
+  <div class="opt-row" data-name="relax_level">
+    <label><input type="radio" name="relax_level" value="很不放松" />很不放松</label>
+    <label><input type="radio" name="relax_level" value="一般" />一般</label>
+    <label><input type="radio" name="relax_level" value="很放松" />很放松</label>
+  </div>
+
+  <h2>（2）体验过有感受到更放松吗？ <span class="req">*</span></h2>
+  <div class="opt-row" data-name="more_relaxed">
+    <label><input type="radio" name="more_relaxed" value="没有" />没有</label>
+    <label><input type="radio" name="more_relaxed" value="没差别" />没差别</label>
+    <label><input type="radio" name="more_relaxed" value="放松很多" />放松很多</label>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>D. 工作坊报名 <span class="section-note">（可选）</span></legend>
+  <h2>你是否有兴趣参加下午的“手作助眠香囊工作坊”（名额约20人）？</h2>
+  <div class="opt-row" data-name="workshop_interest">
+    <label><input type="radio" name="workshop_interest" value="愿意" />愿意</label>
+    <label><input type="radio" name="workshop_interest" value="不愿意" />不愿意</label>
+  </div>
+  <label>联系电话
+    <input id="phone" type="tel" inputmode="numeric" placeholder="仅在你同意联系时使用" />
+  </label>
+  <label>电邮
+    <input id="email" type="email" placeholder="可选" />
+  </label>
+  <label>无障碍与过敏说明
+    <textarea id="access_allergy" placeholder="如有，请在此说明"></textarea>
+  </label>
+  <label class="opt-row" style="margin-top:10px;">
+    <input id="consent_contact" type="checkbox" />我同意为本活动被联系
+  </label>
+</fieldset>
+
+<fieldset>
+  <legend>E. 反馈与建议 <span class="section-note">（可选）</span></legend>
+  <label>（1）今天你最喜欢的环节是：
+    <input id="favorite_part" type="text" />
+  </label>
+  <label>（2）有什么可以改进的地方／建议：
+    <textarea id="suggestions"></textarea>
+  </label>
+</fieldset>
+
+<fieldset class="card">
+  <legend>F. 同意与隐私 <span class="req">*</span></legend>
+  <p class="tips">本问卷仅用于项目评估与服务改进。数据将以汇总形式呈现，不会公开个人身份信息。</p>
+  <label class="opt-row">
+    <input id="consent_anonymous" type="checkbox" />我愿意以匿名形式参与评估
+  </label>
+  <label class="opt-row">
+    <input id="consent_data" type="checkbox" />我同意收集与使用上述数据用于本项目评估
+  </label>
+  <div id="consentError" class="error" style="display:none;">请勾选数据使用同意</div>
+  <div id="postError" class="error" style="display:none;">提交失败，请稍后重试或联系工作人员</div>
+</fieldset>
+
+<div class="subtle">版本：2026-02 • 街站版 • 已接入 Google 表格后端</div>
+
+</div>
+
+<div class="btn-wrap">
+
+<button id="submitBtn" class="btn-primary">提交</button>
+
+</div>
+
+<script>
+
+// 你的 Apps Script Web App URL（已内置）
+
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzK1Bdyul0x71PjTp4XBp1h0J2W3_uZfIBv3NGZB4rNytFx3nIwTb_v_tEdJ2m_Hw/exec';
+
+const SUCCESS_PAGE_URL = 'success.html';
+
+function val(id) { return document.getElementById(id)?.value?.trim() || ''; }
+
+function checked(name) { return document.querySelector('input[name="'+name+'"]:checked')?.value || ''; }
+
+function checkedMulti(container) {
+
+return Array.from(container.querySelectorAll('input[type="checkbox"]:checked')).map(i=>i.value);
+
+}
+
+function collectAnswers() {
+
+const answers = {
+
+meta_version: '2026-02-street',
+
+ts_client: new Date().toISOString(),
+
+name: val('name'),
+
+age: val('age'),
+
+district: val('district'),
+
+source: document.getElementById('source').value,
+
+mood_today: checked('mood_today'),
+
+life_satisfaction: checked('life_satisfaction'),
+
+stress_level: checked('stress_level'),
+
+sleep_quality: checked('sleep_quality'),
+
+sleep_impact: checked('sleep_impact'),
+
+stress_sources: checkedMulti(document.querySelector('[data-name="stress_sources"]')),
+
+happy_reason: val('happy_reason'),
+
+relax_level: checked('relax_level'),
+
+more_relaxed: checked('more_relaxed'),
+
+workshop_interest: checked('workshop_interest'),
+
+phone: val('phone'),
+
+email: val('email'),
+
+access_allergy: val('access_allergy'),
+
+consent_contact: document.getElementById('consent_contact').checked ? '是' : '否',
+
+favorite_part: val('favorite_part'),
+
+suggestions: val('suggestions'),
+
+consent_anonymous: document.getElementById('consent_anonymous').checked ? '是' : '否',
+
+consent_data: document.getElementById('consent_data').checked ? '是' : '否',
+
+ua: navigator.userAgent
+
+};
+
+return answers;
+
+}
+
+function validateAnswers(a) {
+
+const requiredRadios = [
+
+'mood_today','life_satisfaction','stress_level','sleep_quality','sleep_impact',
+
+'relax_level','more_relaxed'
+
+];
+
+for (const key of requiredRadios) {
+
+if (!a[key]) { alert('请完成必答题：' + key); return false; }
+
+}
+
+const consentOk = a.consent_data === '是';
+
+document.getElementById('consentError').style.display = consentOk ? 'none' : 'block';
+
+if (!consentOk) return false;
+
+return true;
+
+}
+
+async function uploadToBackend(payload) {
+
+try {
+
+const res = await fetch(APPS_SCRIPT_URL, {
+
+method: 'POST',
+
+headers: { 'Content-Type': 'application/json' },
+
+body: JSON.stringify(payload)
+
+});
+
+if (!res.ok) throw new Error('HTTP ' + res.status);
+
+return true;
+
+} catch (err) {
+
+console.error('Upload failed:', err);
+
+return false;
+
+}
+
+}
+
+async function handleSubmit() {
+
+const btn = document.getElementById('submitBtn');
+
+btn.disabled = true; btn.textContent = '提交中…';
+
+document.getElementById('postError').style.display = 'none';
+
+const answers = collectAnswers();
+
+if (!validateAnswers(answers)) {
+
+btn.disabled = false; btn.textContent = '提交';
+
+return;
+
+}
+
+const ok = await uploadToBackend(answers);
+
+if (!ok) {
+
+document.getElementById('postError').style.display = 'block';
+
+btn.disabled = false; btn.textContent = '提交';
+
+return;
+
+}
+
+window.location.href = SUCCESS_PAGE_URL;
+
+}
+
+document.getElementById('submitBtn').addEventListener('click', handleSubmit);
+
+</script>
+
+</body>
+
+</html>
